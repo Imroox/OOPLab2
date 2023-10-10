@@ -6,7 +6,13 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) {
-        numbersBetween();
+        Scanner reader= new Scanner(System.in);
+        System.out.println("How many?");
+        int num1=Integer.parseInt(reader.nextLine());
+        for (int i=0; i<num1; i++){
+            printText();
+
+        }
 
     }
     public static void sumOfThreeNumbers(){
@@ -49,6 +55,10 @@ public class Main{
                 first++;
 
             }
+    }
+
+    public static void printText(){
+        System.out.println("In the beginning there were the swamp, the hoe and Java");
     }
 
 
